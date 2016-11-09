@@ -1,0 +1,41 @@
+int x=0;
+int y1=0;
+int y2=0;
+int y4=0;
+int y3=0;
+int speed=10;
+int c1=0;
+int c2=0;
+int s1=0;
+int s2=0;
+int c3=0;
+void setup()
+{
+  size(1920,1080);
+  background(0);
+frameRate(90);
+fill(0);
+rect(475,475,20,20);
+}
+
+void draw()
+{
+   y1=(int)(Math.random()*1080);
+  y2=(int)(Math.random()*1920);
+  y3=(int)(Math.random()*1080);
+  y4=(int)(Math.random()*1920);
+  s1=(int)(Math.random()*20);
+  s2=(int)(Math.random()*5);
+  c1=(int)(Math.random()*255);
+  c2=(int)(Math.random()*255);
+  c3=(int)(Math.random()*255);
+  //(int)(Math.random()*100)
+  
+  fill(0);
+  rect(y2,y1,s1,s1);
+  delay(5);
+  fill(255);
+  ellipse(y4,y3,s2,s2);
+  x=x+speed;
+  delay(5);
+}
