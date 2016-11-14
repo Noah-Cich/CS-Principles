@@ -1,0 +1,9 @@
+ myY = y;
+  myX = x;
+  fill(#F74646);
+  rect(x+15,y+15,20,15);
+  rect(x,y+25,40,20);
+  ellipseMode(CORNER);
+  fill(0);
+  ellipse(x,y+35,15,15);
+  ellipse(x+25,y+35,15,15);
