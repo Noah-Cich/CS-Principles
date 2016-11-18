@@ -1,0 +1,27 @@
+int myX=mouseX;
+int myY=666-26;
+
+class Paddle
+{
+  public Paddle(int myX,int y)
+  {
+    fill(255);
+    stroke(100);
+    strokeWeight(2);
+quad(myX-45,myY,myX+45,myY,myX+45,myY+7,myX-45,myY+7);
+}}
+--------------------------------------------------------
+int x=0;
+int y=0;
+int s1=400;
+void setup()
+{
+  size(1280,720);
+  background(0);
+}
+void draw()
+{
+   background(0);
+  Paddle player = new Paddle(mouseX,350);
+   delay(5);
+}
